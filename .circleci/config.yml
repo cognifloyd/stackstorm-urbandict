@@ -52,7 +52,13 @@ jobs:
           key: v1-dependency-cache-{{ checksum "requirements.txt" }}
       - attach_workspace:
           at: /
-      - run: ~/ci/.circle/deployment
+      - run:
+          name: Download dependencies
+          command: |
+            ~/ci/.circle/dependencies
+      - run:
+          name: Update exchange.stackstorm.org
+          command:  ~/ci/.circle/deployment
 
 workflows:
   version: 2
