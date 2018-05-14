@@ -36,6 +36,7 @@ jobs:
             - home/circleci/virtualenv
             - tmp/st2
             - home/circleci/repo
+            - home/circleci/.gitconfig
 
   deploy:
     docker:
