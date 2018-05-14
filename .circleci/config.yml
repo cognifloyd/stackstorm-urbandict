@@ -53,9 +53,8 @@ jobs:
       - attach_workspace:
           at: /
       - run:
-          name: Download dependencies
-          command: |
-            ~/ci/.circle/dependencies
+          name: Install dependencies
+          command: sudo apt -y install gmic optipng
       - run:
           name: Update exchange.stackstorm.org
           command:  ~/ci/.circle/deployment
