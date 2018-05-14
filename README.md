@@ -1,6 +1,6 @@
 # Urban Dictionary Integration Pack
 
-Pack which allows integration with [Urban Dictionary](http://www.urbandictionary.com/).
+Integration with [Urban Dictionary](http://www.urbandictionary.com/).
 
 ## Actions
 
